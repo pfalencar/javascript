@@ -21,3 +21,12 @@ function ocultarElemento() {
 function naoOcultarElemento() {
 	document.getElementById("demo").style.display="block";
 }
+
+function ocultarMostrar() {
+	var x = document.getElementById("demo");
+	if ( x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display ="none";
+	}
+}
