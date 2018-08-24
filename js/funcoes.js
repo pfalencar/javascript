@@ -30,3 +30,7 @@ function ocultarMostrar() {
 		x.style.display ="none";
 	}
 }
+
+function calcular() {
+	document.getElementById("demo").innerHTML = 10 + 5;
+}
