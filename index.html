@@ -6,9 +6,15 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
+		<input type="text" id="num1" name="num1">
+		<input type="text" id="num2" name="num2">
+		
 		<button id="botao_imagem" onclick="trocaImagem()">Imagem 1</button>
 		<button id="botao_imagem" onclick="imagemTroca()">Imagem 2</button>
 		<img id="myImage" src="img/js-logo.png" style="width:200px">
+		
+		<p id="resultado"> </p>
+		<button id="botao_imagem" onclick="calcular()">Calcular</button>
 		
 		<p id="demo">
 			Lorem ipsum lectus lacus purus aliquam tortor semper viverra pulvinar enim, </br>
@@ -20,16 +26,16 @@
 			pharetra placerat nisl, tristique ad id aenean metus maecenas. </br>
 			fusce libero vehicula duis habitasse ad turpis dictumst laoreet venenatis, </br>
 			posuere himenaeos ornare arcu ac purus dui etiam, posuere nisl litora cursus </br>
-			bibendum accumsan leo curabitur. </br>
-		
+			bibendum accumsan leo curabitur. 		
 		</p>
+		
 		<button id="botao_imagem" onclick="trocaFonte()">Aumentar Fonte</button>
 		<button id="botao_imagem" onclick="fonteTroca()">Diminuir Fonte</button>
 		<button id="botao_imagem" onclick="ocultarElemento()">Ocultar Elemento</button>
 		<button id="botao_imagem" onclick="naoOcultarElemento()">Não ocultar Elemento</button>
 		
 		<button id="botao_imagem" onclick="ocultarMostrar()">Ocultar/Mostrar</button>
-		<button id="botao_imagem" onclick="calcular()">Calcular</button>
+		<button id="botao_imagem" onclick="mostrarTexto()">Mostrar Texto</button>
 		
 		
 	</body>

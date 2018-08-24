@@ -32,5 +32,9 @@ function ocultarMostrar() {
 }
 
 function calcular() {
-	document.getElementById("demo").innerHTML = 10 + 5;
+	document.getElementById("resultado").innerHTML = parseFloat(document.getElementById("num1").value) + parseFloat(document.getElementById("num2").value);
+}
+
+function mostrarTexto() {
+	document.getElementById("demo").style.display="block";
 }
