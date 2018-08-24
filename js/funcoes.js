@@ -18,3 +18,6 @@ function ocultarElemento() {
 	document.getElementById("demo").style.display="none";
 }
 
+function naoOcultarElemento() {
+	document.getElementById("demo").style.display="block";
+}
