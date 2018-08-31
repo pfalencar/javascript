@@ -15,7 +15,8 @@ for (i = 0; i <=10; i++){
 var i;
 var j;
 for (i = 3; i <= 10; i++) {
+	document.write("<br><br>");
 	for (j = 0; j <= 10; j++) {
-		document.write(i + " x " + j + " = " + j*i + "<br><br>");
+		document.write(i + " x " + j + " = " + j*i + "<br>");
 	}
 }
