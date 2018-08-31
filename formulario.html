@@ -2,18 +2,17 @@
 <html>
   <head>
     <title>Formulário</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script src="js/form.js"></script>
   </head>
   <body>
     <form action="">
-	  Nome:<br><input type="text" name="nome" value=""><br>
-	  Sobrenome:<br><input type="text" name="sobrenome" value=""><br><br>
-	  Sexo: Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name="sexo" value="feminino"><br>
-	  Qual o ano do seu nascimento?
-	  <select name="data_nasc">
-		<option value="1980">1980</option>
-		<option value="1981">1981</option>
-		<option value="1982">1982</option>
-		<option value="1983">1983</option>
+	  Nome:<br><input type="text" name="nome" value="" size="35"><br>
+	  Sobrenome:<br><input type="text" name="sobrenome" value="" size="35"><br><br>
+	  Sexo: Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name="sexo" value="feminino"><br><br>
+	  Qual o ano do seu nascimento?<br>
+	  <input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox" />
+	  <select name="data_nasc" id="data_nasc">
 	  </select><br>
 	  Qual a data do seu aniversário?<br>
 	  <input type="date" name="data_aniversario"><br>
@@ -23,7 +22,7 @@
 	  Digite o seu e-mail:<br>
 	  <input type="email" name="email"><br>
 	  Digite uma mensagem:<br>
-	  <textarea name="mensagem" rows="10" cols="30"></textarea><br><br>
+	  <textarea name="mensagem" rows="10" cols="35"></textarea><br><br>
 	  <input type="submit" value="Enviar">
 	</form>
   </body>
