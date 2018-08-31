@@ -7,15 +7,15 @@
   </head>
   <body>
     <form action="">
-	  Nome:<br><input type="text" name="nome" value="" size="35"><br>
-	  Sobrenome:<br><input type="text" name="sobrenome" value="" size="35"><br><br>
+	  Nome:<br><input type="text" name="nome" value="" size="35" pattern="[A-Za-z]+$" required="yes"><br>
+	  Sobrenome:<br><input type="text" name="sobrenome" value="" size="35" pattern="[a-z\s]+$"><br><br>
 	  Sexo: Masculino<input type="radio" name="sexo" value="masculino"> Feminino<input type="radio" name="sexo" value="feminino"><br><br>
 	  Qual o ano do seu nascimento?<br>
 	  <input type="button" id="btnCarregar" onclick="ano()" value="Carregar combobox" />
 	  <select name="data_nasc" id="data_nasc">
 	  </select><br>
 	  Qual a data do seu aniversário?<br>
-	  <input type="date" name="data_aniversario"><br>
+	  <input type="date" name="data_aniversario" pattern="[0-9]{2}\/[0-9]{2}\/[0-9]{4}"><br>
 	  Assinale os itens de maior consumo:<br>
 	  <input type="checkbox" name="chocolate" value="chocolate">Chocolate<br>
 	  <input type="checkbox" name="refrigerante" value="refrigerante">Refrigerante<br>
